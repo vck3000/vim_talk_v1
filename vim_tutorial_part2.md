@@ -2,17 +2,9 @@
 
 (Disclaimer, some of this tutorial is based off vimtutor!)
 
-
-- (gg)G
-- tfTF;,
-
 - ctrl-f ctrl-b ctrl-u ctrl-b
 - Replace
 - HML(zz)
-
-- Numbers
-
-- (cdyv)(iatfTF)("'(){}[]t)
 
 
 ## 1. Moving to the start and end (0$)
@@ -117,15 +109,15 @@ and more recently with desktop publishing software like Aldus PageMaker includin
 
 
 
-## 3. Insert mode (i)
+## 4. Navigating to the start, end and a specific line number (g_)
 
-To actually type text, press `i` to enter "insert mode".
+To go to the start of the file,  press `gg`.
+To go to the end of the file,    press `G`.
+To go to a specific line number, press `#G`
 
-To return to normal mode, press `esc` or `ctrl + c` or `ctrl + [`.
+Tip: `ctrl-o` and `ctrl-i` takes you to your cursor's previous and future jumps respectively.
 
 
----> There is text misng this .
----> There is some text missing from this line.
 
 
 
@@ -149,15 +141,21 @@ To return to normal mode, press `esc` or `ctrl + c` or `ctrl + [`.
 
 
 
-## 4. Saving your changes (:w)
 
-To save a file, type `:w`!
 
+## 5. Horizontal movement (tfTF;,)
 
+To navigate forwards  till a specific letter, press `t_` where `_` is the letter. 
+To navigate backwards till a specific letter, press `T_` where `_` is the letter. 
 
+To navigate forwards  to   a specific letter, press `f_` where `_` is the letter. 
+To navigate backwards to   a specific letter, press `F_` where `_` is the letter. 
 
+To go to the next     entry, press `;`.
+To go to the previous entry, press `,`.
 
 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
 
@@ -179,19 +177,17 @@ To save a file, type `:w`!
 
 
 
+## 6. Find
 
+To search for a phrase (regex), press `/<search term>`.
 
-## 5. Basic word movement (wb)
+To go to the next     entry, press `n`.
+To go to the previous entry, press `N`.
 
-Press `w` to move forward a "word" and press `b` to move backwards a "word"!
+To search for the next     word the cursor is on, press `*`.
+To search for the previous word the cursor is on, press `#`.
 
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
 
@@ -213,27 +209,59 @@ and more recently with desktop publishing software like Aldus PageMaker includin
 
 
 
-## 6. Deleting characters and lines
 
-Use `x` to delete a character in normal mode. 
 
-Use `dd` to delete the current line!
+## 7. The "power" of Vim
 
+Now we finally get a very interesting milestone in Vim usage. We can now start to form "sentences" in Vim. 
 
-** Delete me! **
-** Delete me! **
+(The following from: https://danielmiessler.com/study/vim/)
+Verb - Modifiers - Nouns
 
-** Deloitte me! **
-** Deloitte me! **
+### Verbs:
+- d: delete
+- c: change
+- y: yank
+- v: visual
 
+### Modifiers:
+- i: inside
+- a: around
+- NUM: number (e.g. 1, 2, 3...)
+- t: till
+- f: find to
 
+### Nouns:
+- w: word
+- s: sentence
+- p: paragraph
+- t: tags (e.g. <div></div>)
+- b: block
+- ": double quotes
+- ': single quotes
+- (: braces
+- {: curly braces
+- [: square braces
 
 
+E.g.
 
+1. 
+The quick brown fox jumped over the lazy dog.
 
+2. 
+ser = Serial.begin(int(input('Enter a COM port')))
 
+3. 
+<div>
+  <span>
+    Testing
+  </span>
+</div>
 
+4. 
 
+10/04/2020,VISA PURCHASE   PAYPAL *UBER AU 4029357733   08/04 AU AUD,-$34.79,$86.05
 
 
 
@@ -245,18 +273,18 @@ Use `dd` to delete the current line!
 
 
 
-## 7. Yank and paste
 
-Copy pasting in Vim is different! We "yank" and "paste". 
 
-To copy a line, press `yy`. To paste the line, press `p`.
 
 
 
-Copy me!!!
 
+## 8. The best part of Vim, macros.
 
+To start recording a macro, press `q_`, where `_` is a register.
+To stop  recording a macro, press `q`.
 
+To play back a macro, press `@_`, where `_` is a register.
 
 
 
@@ -275,28 +303,6 @@ Copy me!!!
 
 
 
-
-
-## 8. Visual mode (v)
-
-
-To select a portion of text,   press `v`      to enter "visual" mode! 
-To select rows      at a time, press `V`      to enter "visual-line" mode!
-To select columns   at a time, press `ctrl-v` to enter "visual-block" mode!
-
-Your normal navigation keys work here (hjklwb)!
-
-You can then yank or delete your selection!
-
-To re-select the last selection, press `gv`!
-
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
 
