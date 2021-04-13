@@ -2,9 +2,9 @@
 
 (Disclaimer, some of this tutorial is based off vimtutor!)
 
-- ctrl-f ctrl-b ctrl-u ctrl-b
-- Replace
-- HML(zz)
+
+
+
 
 
 ## 1. Moving to the start and end (0$)
@@ -211,7 +211,7 @@ To search for the previous word the cursor is on, press `#`.
 
 
 
-## 7. The "power" of Vim
+## 7. The foundations to the "power" of Vim
 
 Now we finally get a very interesting milestone in Vim usage. We can now start to form "sentences" in Vim. 
 
@@ -264,6 +264,7 @@ ser = Serial.begin(int(input('Enter a COM port')))
 10/04/2020,VISA PURCHASE   PAYPAL *UBER AU 4029357733   08/04 AU AUD,-$34.79,$86.05
 
 
+5. Can also do <num><hjkl>!
 
 
 
@@ -278,8 +279,7 @@ ser = Serial.begin(int(input('Enter a COM port')))
 
 
 
-
-## 8. The best part of Vim, macros.
+## 8. Macros, the true "power" of Vim.
 
 To start recording a macro, press `q_`, where `_` is a register.
 To stop  recording a macro, press `q`.
@@ -300,6 +300,22 @@ To play back a macro, press `@_`, where `_` is a register.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 9. An example program!
+
+Hailstones? 
 
 
 

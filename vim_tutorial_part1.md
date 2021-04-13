@@ -310,3 +310,18 @@ and more recently with desktop publishing software like Aldus PageMaker includin
 
 
 
+
+
+
+
+
+
+
+
+
+## 10. A great way to practise, Vim-Be-Good!
+
+A game to train your fundamentals!
+
+
+
